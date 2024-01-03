@@ -33,26 +33,26 @@ export default function Navbar() {
       <nav className={`Navbar ${navbar ? 'navbarActive' : ''}`}>
         <div className="navBody container">
           <div className='nav-logo'>
-            <Link to='/'>
+            <a href='/'>
               <h1>Logo</h1>
-            </Link>
+            </a>
           </div>
 
           <ul className={active}>
             <li>
-              <Link onClick={navToggle}  className='nav-link' to='/'> Home</Link>
+              <a onClick={navToggle}  className='nav-link' href='#'> Home</a>
             </li>
             <li>
-              <Link onClick={navToggle} className='nav-link' to='/haqida'>About us</Link>
+              <a onClick={navToggle} className='nav-link' href='#haqida'>About us</a>
             </li>
             <li>
-              <Link onClick={navToggle} className='nav-link' to='/portfolio'>Portfolio</Link>
+              <a onClick={navToggle} className='nav-link' href='#portfolio'>Portfolio</a>
             </li>
             <li>
-              <Link onClick={navToggle} className='nav-link' to='/news'>News</Link>
+              <a onClick={navToggle} className='nav-link' href='#news'>News</a>
             </li>
             <li>
-              <Link onClick={navToggle} className='nav-link' to='/contact'>Contact us</Link>
+              <a onClick={navToggle} className='nav-link' href='#contact'>Contact us</a>
             </li>
           </ul>
 
