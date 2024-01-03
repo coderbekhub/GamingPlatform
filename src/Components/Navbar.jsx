@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Navbar() {
@@ -26,33 +26,33 @@ export default function Navbar() {
   }
   window.addEventListener('scroll', changeNavbar);
 
-  useEffect(() => {
-  }, [])
+  // useEffect(() => {
+  // }, [])
   return (
     <section className='navSection'>
       <nav className={`Navbar ${navbar ? 'navbarActive' : ''}`}>
         <div className="navBody container">
           <div className='nav-logo'>
             <Link to='/'>
-              <img src={navBrand} alt="..." />
+              <h1>Logo</h1>
             </Link>
           </div>
 
           <ul className={active}>
             <li>
-              <Link onClick={navToggle}  className='nav-link' to='/'> Home </Link>
+              <Link onClick={navToggle}  className='nav-link' to='/'> Home</Link>
             </li>
             <li>
-              <Link onClick={navToggle} className='nav-link' to='/xizmatlar'>About us</Link>
+              <Link onClick={navToggle} className='nav-link' to='/haqida'>About us</Link>
             </li>
             <li>
-              <Link onClick={navToggle} className='nav-link' to='/aloqa'>Portfolio</Link>
+              <Link onClick={navToggle} className='nav-link' to='/portfolio'>Portfolio</Link>
             </li>
             <li>
-              <Link onClick={navToggle} className='nav-link' to='/aloqa'>News</Link>
+              <Link onClick={navToggle} className='nav-link' to='/news'>News</Link>
             </li>
             <li>
-              <a href="#">Contact us</a>
+              <Link onClick={navToggle} className='nav-link' to='/contact'>Contact us</Link>
             </li>
           </ul>
 

@@ -7,7 +7,119 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.App {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1146px;
   margin: 0 auto;
+}
+
+.navSection {
+  background: linear-gradient(181deg, #000 0.82%, #4A2800 129.1%);
+  backdrop-filter: blur(7px);
+  .navbarActive{
+    transition: 0.5s ease-in-out;
+    backdrop-filter: saturate(180%) blur(3px) !important;
+    background: #0B2A5Ab2 !important;
+  }
+  
+  .Navbar {
+    width: 100%;
+    position: fixed;
+    transition: 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B2A5Ab2;
+  
+    .navBody {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .nav-logo {
+        img {
+          width: 120px;
+          height: auto;
+        }
+      }
+  
+      .nav-list {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        list-style-type: none;
+        padding: none !important;
+        margin-top: 12px;
+  
+        .NavBtnList {
+          display: flex;
+          width: auto;
+          padding: 10px 20px;
+          justify-content: center;
+          align-items: center;
+          border-radius: 80px;
+          background: #FE390C;
+          gap: 8px;
+          color: #FFF;
+          text-align: center;
+          font-family: Inter;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 150%;
+        }
+        
+        .nav-link {
+          color: #000;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 24px; 
+          letter-spacing: 0.36px;
+          margin-right: 24px;
+        }
+      }
+  
+      .NavBtn {
+        display: inline-flex;
+        padding: 12px 16px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 4px;
+        border: 1px solid #FE390C;
+        color: #FE390C;
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+  
+        &:hover {
+          color: #fe380ca9;
+        }
+      }
+  
+      .nav__toggler{
+        cursor: pointer;
+        display: none;
+        div{
+          border-radius: 5px;
+          width: 36px;
+          height: 0.2rem;
+          margin: 0.4rem;
+          background: #000;
+          transition: 0.5s ease-in;
+        }
+      }
+    }
+  }
 }
