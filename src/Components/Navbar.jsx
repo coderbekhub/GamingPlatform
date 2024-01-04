@@ -30,7 +30,27 @@ export default function Navbar() {
   // }, [])
   return (
     <section className='navSection'>
-      <nav className={`Navbar ${navbar ? 'navbarActive' : ''}`}>
+        <div className="navContainer">
+          <nav className='nav'>
+            <div className='navLogo'>
+              <a href="/"><h1>Logo</h1></a>
+            </div>
+            <ul className='navList'>
+              <li><a className='navLink' href="#">Home</a></li>
+              <li><a className='navLink' href="#">About us</a></li>
+              <li><a className='navLink' href="#">Portfolio</a></li>
+              <li><a className='navLink' href="#">News</a></li>
+              <li><a className='navLink navBtn' href="#">Contact us</a></li>
+            </ul>
+            <div onClick={navToggle} className={toggleIcon}>
+              <div className="line1"></div>
+              <div className="line2"></div>
+              <div className="line3"></div>
+            </div>
+          </nav>
+        </div>
+
+      {/* <nav className={`Navbar ${navbar ? 'navbarActive' : ''}`}>
         <div className="navBody container">
           <div className='nav-logo'>
             <Link to='/'>
@@ -62,7 +82,7 @@ export default function Navbar() {
             <div className="line3"></div>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </section>
   )
 }
