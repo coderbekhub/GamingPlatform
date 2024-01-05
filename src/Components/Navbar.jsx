@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [active, setActive] = useState('nav-list')
-  const [toggleIcon, setToggleIcon] = useState('nav__toggler')
+  const [toggleIcon, setToggleIcon] = useState('navToggle')
 
   const navToggle = () => {
     active === 'nav-list'
@@ -40,9 +40,9 @@ export default function Navbar() {
               <li><a className='navLink' href="#">About us</a></li>
               <li><a className='navLink' href="#">Portfolio</a></li>
               <li><a className='navLink' href="#">News</a></li>
-              <li><a className='navLink navBtn' href="#">Contact us</a></li>
+              <li><a className='navLink navBtn' href="tel:+998500105610">Contact us</a></li>
             </ul>
-            <div onClick={navToggle} className={toggleIcon}>
+            <div onClick={navToggle} className={toggleIcon} id='navToggle'>
               <div className="line1"></div>
               <div className="line2"></div>
               <div className="line3"></div>

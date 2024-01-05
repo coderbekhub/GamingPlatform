@@ -9,6 +9,8 @@
 
 .App {
   overflow-x: hidden;
+  background: linear-gradient(181deg, #000 0.82%, #4A2800 129.1%);
+  backdrop-filter: blur(7px);
 }
 
 ul {
@@ -30,8 +32,7 @@ a {
 }
 
 .navSection {
-  background: linear-gradient(181deg, #000 0.82%, #4A2800 129.1%);
-  backdrop-filter: blur(7px);
+  padding: 60px 0 80px 0;
   .nav {
     display: flex;
     align-items: center;
@@ -60,7 +61,72 @@ a {
         .navBtn {
           position: relative;
           right: 51px;
+          width: 132px;
+          height: 41px;
+          border-radius: 6px;
+          background: #FA9021;
+          padding: 11px 28px;
         }
+      }
+    }
+
+    .navToggle {
+      cursor: pointer;
+      display: none;
+      div{
+        border-radius: 5px;
+        width: 36px;
+        height: 0.2rem;
+        margin: 0.4rem;
+        background: #fff;
+        transition: 0.5s ease-in;
+      }
+    }
+  }
+}
+
+.heroSection {
+  .heroContent {
+    .heroInfo {
+      h3 {
+        color: #E87D0E;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 155.2%;
+        margin-bottom: 17px; 
+      }
+
+      h2 {
+        color: #FFF;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 155.2%; 
+        margin-bottom: 26px;
+      }
+
+      p {
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 200%;
+        margin-bottom: 50px;
+      }
+
+      button {
+        width: 195px;
+        height: 53px;
+        border-radius: 40px;
+        background: linear-gradient(92deg, #FA8305 2.08%, #FB9E3C 117.25%);
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+      }
+    }
+
+    .heroImg {
+      img {
+        width: 620px;
       }
     }
   }
