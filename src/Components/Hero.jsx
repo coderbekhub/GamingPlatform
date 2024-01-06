@@ -14,7 +14,7 @@ export default function Hero() {
           </div>
 
           <div className="heroImg col-md-6 col-12">
-            {/* <img src={HeroImg} alt="img"/> */}
+            <img src={HeroImg} alt="img"/>
           </div>
         </div>
       </div>
