@@ -99,6 +99,7 @@ a {
 
 .heroSection {
   padding-top: 130px;
+  margin-bottom: 132px;
   .heroContent {
     .heroInfo {
       h3 {
@@ -141,6 +142,35 @@ a {
       img {
         width: 620px;
       }
+    }
+  }
+}
+
+.TrendingGameSection {
+  .trendingContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 58px;
+    h2 {
+      color: #FFF;
+      font-size: 31px;
+      font-weight: 700;
+      line-height: 187.5%;
+    }
+
+    a {
+      width: 139px;
+      height: 57px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.11);
+      padding: 10px 30px;
+
+      color: #FFF;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 187.5%;
+      text-align: center;
     }
   }
 }
